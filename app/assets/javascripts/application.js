@@ -14,3 +14,36 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function show_hide_controller() {
+				if ($("#password_input").attr("type")=="password") {
+								$("#password_input").attr("type", "text");
+				}
+				else{
+								$("#password_input").attr("type", "password");
+				}
+				// var $this = $(this)
+				// if ($this.is(':checked')) {
+				// 				$('#password_input')
+				// }
+				// else {
+				// }
+																																	
+
+				// var show_password = $('#show_password').is(':checked');
+}
+function check_password_format() {
+    var password = $("#password_input").val();
+    $("#password_alert_message").html("Password man");
+    if (password.length < 5)
+        $("#password_alert_message").html("Password too short");
+				else if (password.length > 20)
+        $("#password_alert_message").html("Password too long");
+    else
+        $("#password_alert_message").html("");
+}
+
+$(document).ready(function () {
+   $("#password_input").keyup(check_password_format);
+			$('#show_password').click(show_hide_controller);
+});

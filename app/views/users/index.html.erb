@@ -10,9 +10,20 @@
   <input id="username_input"><br><br>
   
   <label for="password_input">Password</label><br>
-  <input id="password_input" type="password"><br><br>
+  <input id="password_input" type="password" onChange="check_password_format();"><br><br>
+ 	<input type="checkbox" id="show_password">Show Password<br>
   
   <button id="login_btn">Login</button>
   <button id="signup_btn">Add User</button>
   
+  <div class="myClass" id="password_alert_message">
 <% end %>
+
+<!-- <div class="td"> -->
+<!--     <input type="password" id="txtNewPassword" /> -->
+<!-- </div> -->
+<!-- <div class="td"> -->
+<!--     <input type="password" id="txtConfirmPassword" onChange="checkPasswordMatch();" /> -->
+<!-- </div> -->
+<!--     <div class="registrationFormAlert" id="divCheckPasswordMatch"> -->
+<!-- </div> -->
