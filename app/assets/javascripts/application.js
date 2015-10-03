@@ -32,7 +32,7 @@ function show_hide_controller() {
 
 				// var show_password = $('#show_password').is(':checked');
 }
-function check_password_format() {
+ function check_password_format() {
     var password = $("#password_input").val();
     $("#password_alert_message").html("Password man");
     if (password.length < 5)
