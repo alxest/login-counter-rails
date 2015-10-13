@@ -48,3 +48,4 @@ group :development, :test do
 
 end
 
+gem 'selenium-webdriver'
