@@ -36,9 +36,9 @@ function show_hide_controller() {
     var password = $("#password_input").val();
     $("#password_alert_message").html("Password man");
     if (password.length < 5)
-        $("#password_alert_message").html("Password too short");
+        $("#password_alert_message").html("The password should be 8~20 characters long. Please try again.");
 				else if (password.length > 20)
-        $("#password_alert_message").html("Password too long");
+        $("#password_alert_message").html("The password should be 8~20 characters long. Please try again.");
     else
         $("#password_alert_message").html("");
 }
